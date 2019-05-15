@@ -3,6 +3,7 @@ CMAKE_MINIMUM_REQUIRED(VERSION 2.6.18)
 
 set(CMAKE_CXX_FLAGS "-pipe -W -fPIC -Wno-deprecated -Wall -g -ggdb -std=c++11")
 
+#一些目录的设置
 SET(SRC_DIR ${CMAKE_SOURCE_DIR}/src)
 MESSAGE(STATUS "SRC_DIR=" ${SRC_DIR})
 SET(PROTO_DIR ${CMAKE_SOURCE_DIR}/proto)
