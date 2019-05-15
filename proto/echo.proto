@@ -1,0 +1,5 @@
+message echoMsg{
+	required int64 msgId = 1;
+	required string nickName = 2;
+	required int32 ctime = 3;
+}
