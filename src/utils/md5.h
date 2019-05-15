@@ -11,7 +11,7 @@
 #include <stdint.h>
 #include <stddef.h>
 
-namespace chatRoom {
+namespace echo {
     class MD5 {
     private:
 

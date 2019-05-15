@@ -14,7 +14,7 @@
 
 using namespace std;
 
-namespace chatRoom{
+namespace echo{
     //整个表格
     class TerminalTable{
 

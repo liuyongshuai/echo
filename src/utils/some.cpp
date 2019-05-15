@@ -24,7 +24,7 @@
 
 using namespace std;
 
-namespace chatRoom{
+namespace echo{
     const char *SomeUtils::urandomDevice = "/dev/urandom";
 
     //获取屏幕终端的宽高

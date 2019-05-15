@@ -15,7 +15,7 @@
 
 using namespace std;
 
-namespace chatRoom{
+namespace echo{
 #define TABLE_LEN(a) ( (sizeof(a)) / (sizeof(a[0])) )
 
     int RuneUtils::isRuneInTable(int32_t rune, runeInterval *table, size_t tableLen){

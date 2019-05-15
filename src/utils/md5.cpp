@@ -12,7 +12,7 @@
 
 using namespace std;
 
-namespace chatRoom {
+namespace echo {
 #define F(x, y, z)            ((z) ^ ((x) & ((y) ^ (z))))
 #define G(x, y, z)            ((y) ^ ((z) & ((x) ^ (y))))
 #define H(x, y, z)            ((x) ^ (y) ^ (z))

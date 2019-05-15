@@ -14,7 +14,7 @@
 
 using namespace std;
 
-namespace chatRoom{
+namespace echo{
 
     //初始化操作
     void RegExp::init(){

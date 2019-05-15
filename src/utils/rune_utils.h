@@ -12,7 +12,7 @@
 #include<stdint.h>
 #include<stdarg.h>
 
-namespace chatRoom {
+namespace echo {
     class RuneUtils {
     private:
         RuneUtils() {};

@@ -13,7 +13,7 @@
 
 using namespace std;
 
-namespace chatRoom{
+namespace echo{
     class SomeUtils{
     private:
         static const char *urandomDevice;

@@ -14,7 +14,7 @@
 #include <stddef.h>
 
 using namespace std;
-namespace chatRoom{
+namespace echo{
     class StrUtils{
     private:
         StrUtils(){};

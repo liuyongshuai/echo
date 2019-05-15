@@ -6,7 +6,7 @@
 #ifndef _RUNTOFUSERVER_SINGLETONBASE_H_201904191923_
 #define _RUNTOFUSERVER_SINGLETONBASE_H_201904191923_
 
-namespace chatRoom{
+namespace echo{
     class singletonBase{
     protected:
         singletonBase(){}
@@ -18,7 +18,7 @@ namespace chatRoom{
 
         const singletonBase &operator=(const singletonBase &);
     };
-} //namespace chatRoom
+} //namespace echo
 
 
 #endif //_RUNTOFUSERVER_SINGLETONBASE_H_201904191923_

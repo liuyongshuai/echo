@@ -13,7 +13,7 @@
 
 using namespace std;
 
-namespace chatRoom {
+namespace echo {
     static const char *replaceStr[] = {
             "“", "\"",
             "”", "\"",

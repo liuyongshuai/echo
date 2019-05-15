@@ -14,7 +14,7 @@
 #include<string>
 #include<pcre.h>
 
-namespace chatRoom{
+namespace echo{
 #define PCRE_OVECCOUNT 128
 
     class RegExp{
