@@ -1,5 +1,14 @@
-message echoMsg{
-	required int64 msgId = 1;
-	required string nickName = 2;
-	required int32 ctime = 3;
+syntax = "proto2";
+package echo;
+
+message echoMsg {
+    required string msgId = 1;
+    required int32 ctime = 2;
+    required string nickName = 3;
+    required string msgInfo = 4;
+    required string charset = 5;
+}
+
+message pingMsg {
+    required bool ret = 1;
 }
