@@ -147,6 +147,8 @@ LIST(APPEND ECHO_LIBRARY_LIST ${THIRD_PARTY_DIR}/pcre/lib/libpcre.a)
 #protobuf
 LIST(APPEND ECHO_INCLUDE_LIST ${THIRD_PARTY_DIR}/protobuf/include)
 LIST(APPEND ECHO_LIBRARY_LIST ${THIRD_PARTY_DIR}/protobuf/lib/libprotobuf.a)
+LIST(APPEND ECHO_LIBRARY_LIST ${THIRD_PARTY_DIR}/protobuf/lib/libprotoc.a)
+LIST(APPEND ECHO_LIBRARY_LIST ${THIRD_PARTY_DIR}/protobuf/lib/libprotobuf-lite.a)
 
 #thrift
 LIST(APPEND ECHO_INCLUDE_LIST ${THIRD_PARTY_DIR}/thrift/include)
