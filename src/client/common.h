@@ -33,3 +33,4 @@
 #include <readline/readline.h>
 #include <readline/history.h>
 #include "proto/echo.pb.h"
+#include "../utils/strutils.h"

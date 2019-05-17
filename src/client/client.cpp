@@ -6,13 +6,15 @@
 #include "common.h"
 
 using namespace std;
+using namespace echo;
 
 int main(int argc, char *argv[]){
     string selfName = "我";
-    if (argc > 0 && strlen(argv[1]) > 0){
+    if (argc > 1 && strlen(argv[1]) > 0){
         selfName = argv[1];
     }
-    cout << selfName << endl;
+    StrUtils::trimChar(selfName, ':');
+    selfName += ":";
 
     char *input, shell_prompt[100] = {0};
 
