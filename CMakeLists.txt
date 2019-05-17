@@ -1,7 +1,7 @@
 PROJECT(echo)
 CMAKE_MINIMUM_REQUIRED(VERSION 2.6.18)
 
-set(CMAKE_CXX_FLAGS "-pipe -W -fPIC -Wno-deprecated -Wall -g -ggdb -std=c++11")
+set(CMAKE_CXX_FLAGS "-pipe -W -fPIC -Wno-deprecated -Wall -g -ggdb -std=c++11 -D_GLIBCXX_USE_CXX11_ABI=0")
 
 #源码目录
 SET(SRC_DIR ${CMAKE_SOURCE_DIR}/src)
@@ -148,8 +148,6 @@ LIST(APPEND ECHO_LIBRARY_LIST ${THIRD_PARTY_DIR}/pcre/lib/libpcre.a)
 #protobuf
 LIST(APPEND ECHO_INCLUDE_LIST ${THIRD_PARTY_DIR}/protobuf/include)
 LIST(APPEND ECHO_LIBRARY_LIST ${THIRD_PARTY_DIR}/protobuf/lib/libprotobuf.a)
-LIST(APPEND ECHO_LIBRARY_LIST ${THIRD_PARTY_DIR}/protobuf/lib/libprotoc.a)
-LIST(APPEND ECHO_LIBRARY_LIST ${THIRD_PARTY_DIR}/protobuf/lib/libprotobuf-lite.a)
 
 #thrift
 LIST(APPEND ECHO_INCLUDE_LIST ${THIRD_PARTY_DIR}/thrift/include)
