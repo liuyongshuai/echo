@@ -4,7 +4,8 @@ CMAKE_MINIMUM_REQUIRED(VERSION 2.6.18)
 set(CMAKE_CXX_FLAGS "-pipe -W -fPIC -Wno-deprecated -Wall -g -ggdb -std=c++11")
 
 #如果libprotobuf是使用GCC 4.x或之前版本构建的，会有C++ ABI问题。
-#在GCC 5（与C ++ 11相关的要求，但它适用，即使你不使用C ++ 11)中更改了相关类的的ABI
+#从GCC 5.1开始, std::string 和 std::list 使用了新的C++11的ABI, 即使你显式指定使用老标准.
+#参见：https://gcc.gnu.org/onlinedocs/libstdc++/manual/using_dual_abi.html
 ADD_DEFINITIONS(-D_GLIBCXX_USE_CXX11_ABI=0)
 
 #源码目录
