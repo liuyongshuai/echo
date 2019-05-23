@@ -3,7 +3,7 @@
  * Author:	liuyongshuai<liuyongshuai@hotmail.com>
  * Time:	2019-05-16 20:50
  ************************************************************************/
-#include "common.h"
+#include "../utils/common.h"
 
 using namespace std;
 using namespace echo;
