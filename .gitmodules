@@ -1,0 +1,4 @@
+[submodule "third-party"]
+	path = third-party
+	url = git@code.aliyun.com:liuyongshuai/third-party.git
+	branch = master
