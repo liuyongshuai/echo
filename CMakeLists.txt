@@ -8,6 +8,20 @@ set(CMAKE_CXX_FLAGS "-pipe -W -fPIC -Wno-deprecated -Wall -g -ggdb -std=c++11")
 #参见：https://gcc.gnu.org/onlinedocs/libstdc++/manual/using_dual_abi.html
 ADD_DEFINITIONS(-D_GLIBCXX_USE_CXX11_ABI=0)
 
+#判断当前的gcc的版本号，以便判断是否支持-no-pie选项
+EXECUTE_PROCESS(COMMAND gcc -dumpversion OUTPUT_VARIABLE tmpGVer1)
+string(STRIP ${tmpGVer1} tmpGVer2)
+SET(supportPIE "6")
+string(SUBSTRING ${tmpGVer2} 0 1 tmpGVer3)
+IF (tmpGVer3 STRGREATER supportPIE OR tmpGVer3 STREQUAL supportPIE)
+    #gcc 6.0 之后就默认启用"--enable-default-pie",可以加上-no-pie 禁用掉
+    #参考：https://blog.csdn.net/ivan240/article/details/5363395
+    #参考：https://blog.csdn.net/cclethe/article/details/83387685
+    #参考：https://blog.csdn.net/hanyulongseucas/article/details/87715186
+    #参考：https://blog.csdn.net/softee/article/details/48064943
+    SET(CMAKE_EXE_LINKER_FLAGS " -no-pie")
+ENDIF ()
+
 #源码目录
 SET(SRC_DIR ${CMAKE_SOURCE_DIR}/src)
 MESSAGE(STATUS "SRC_DIR=" ${SRC_DIR})
